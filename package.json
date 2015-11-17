@@ -2,6 +2,10 @@
   "name": "youmightnotneedjquery",
   "version": "0.1.0",
   "description": "You might not need jQuery",
+  "scripts": {
+    "start": "node index.js",
+    "PDF": "pandoc YouMightNotNeedjQuery.md -f markdown_github --latex-engine=xelatex --listings -H listings-setup.tex -o YouMightNotNeedjQuery.pdf"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/HubSpot/youmightnotneedjquery.git"
@@ -13,12 +17,7 @@
   },
   "devDependencies": {
     "readfiletree": "0.0.1",
-    "gulp-util": "~2.2.9",
-    "gulp": "~3.3.0",
-    "gulp-coffee": "~1.2.5",
-    "gulp-jade": "~0.3.0",
-    "gulp-stylus": "0.0.7",
-    "coffee-script": "~1.6.3",
-    "nib": "~1.0.2"
-  }
+    "lodash.isplainobject": "^3.2.0"
+  },
+  "dependencies": {}
 }
